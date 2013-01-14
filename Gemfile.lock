@@ -1,0 +1,14 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    dnode (0.0.2)
+      eventmachine
+      events
+    eventmachine (1.0.0)
+    events (0.9.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dnode
