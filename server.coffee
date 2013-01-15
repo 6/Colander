@@ -1,4 +1,3 @@
-express = require 'express'
 dnode = require 'dnode'
 
 port = 7000

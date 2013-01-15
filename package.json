@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "jsdom": "0.2.x"
-    ,"express": "3.x"
     ,"dnode": "1.0.x"
     ,"coffee-script": "1.4.x"
   },
