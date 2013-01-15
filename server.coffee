@@ -7,7 +7,6 @@ port = process.env.PORT || 5000
 
 server = dnode
   parse: (html, callback) =>
-    console.log "HTML", html
     try
       jsdom.env
         html: html
