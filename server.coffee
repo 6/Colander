@@ -1,6 +1,6 @@
 dnode = require 'dnode'
 
-port = 7000
+port = process.env.PORT || 5000
 
 server = dnode
   saySomething: (something, callback) =>
