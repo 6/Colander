@@ -6,19 +6,21 @@ jquerySrc = fs.readFileSync("./vendor/jquery.js").toString()
 port = process.env.PORT || 5000
 
 server = dnode
-  parse: (html, callback) =>
+  parse: (html, code, callback) =>
     try
       jsdom.env
         html: html
         src: jquerySrc
         done: (err, window) =>
           if err?
-            callback("Error parsing HTML", null)
+            callback(error: "yes")
           else
             $ = window.$
-            callback(null, $("title").text())
+            result = {error: "no"}
+            eval(code) # lol
+            callback(result)
     catch err
-      callback("Error initializing JSDOM", null)
+      callback(error: "yes")
 
 server.listen(port)
 console.log("Listening on localhost:#{port}")
