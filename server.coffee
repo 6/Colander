@@ -1,4 +1,7 @@
 dnode = require 'dnode'
+jsdom = require 'jsdom'
+fs = require 'fs'
+jquerySrc = fs.readFileSync("./vendor/jquery.js").toString()
 
 port = process.env.PORT || 5000
 
