@@ -15,6 +15,10 @@
     ,"dnode": "1.0.x"
     ,"coffee-script": "1.4.x"
   },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
   "author": "",
   "license": "BSD",
   "readmeFilename": "README.md"
